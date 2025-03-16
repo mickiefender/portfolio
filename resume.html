@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Michael Coleman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h2>Mickie.</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="hire-btn" onclick="window.location.href='hire-me.html'">Hire me</button>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Resume Hero Section -->
+        <section class="resume-hero">
+            <h1 class="animate fade-in-up">My <span class="highlight">Resume</span></h1>
+            <p class="section-subtitle animate fade-in-up delay-1">
+                A comprehensive overview of my professional experience, skills, and education.
+            </p>
+            <div class="resume-actions animate fade-in-up delay-2">
+                <a href="resume.html#" class="download-btn">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+                <a href="" class="download-btn alt" id="print-resume-btn">
+                    <i class="fas fa-print"></i> Print Resume
+                </a>
+            </div>
+        </section>
+
+        <!-- Resume Content -->
+        <div class="resume-container">
+            <!-- Profile Section -->
+            <section class="resume-section profile-section animate fade-in-up delay-1">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="images/profile.png" alt="Luke Coleman">
+                    </div>
+                    <div class="profile-info">
+                        <h2>Michael Coleman</h2>
+                        <h3>Software Developer</h3>
+                        <div class="profile-contact">
+                            <p><i class="fas fa-envelope"></i>michaelcoleman106@gamil.com</p>
+                            <p><i class="fas fa-phone"></i> <a style="text-decoration: none;" href="tel:+233208517482">+233 208 517 482</a></p>
+                            <p><i class="fas fa-map-marker-alt"></i> Takoradi, Ghana</p>
+                        </div>
+                        <div class="profile-social">
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-summary">
+                    <h3 class="section-title">About Me</h3>
+                    <p>Innovative and deadline-driven Software Developer with 4 years of experience designing and developing
+                         user-centered digital experiences from initial concept to final, polished deliverable. Proficient in 
+                         various programming languages and technologies with a passion for clean, efficient code and exceptional user experiences.</p>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="resume-section animate fade-in-up delay-2">
+                <h3 class="section-title">Work Experience</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span>2025 - Present</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4> Software Developer</h4>
+                            <h5>Tech Innovators</h5>
+                            <ul>
+                                <li>Lead a team of 5 developers in building a music web applications using React, Node.js, and MongoDB</li>
+                                <li>Architected and developed a microservices-based platform that improved system scalability by 300%</li>
+                                <li>Mentored junior developers and conducted code reviews to ensure code quality and best practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span>2023- 2024</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Full Stack Developer</h4>
+                            <h5>Tech Innovators, Takoradi, Ghana</h5>
+                            <ul>
+                                <li>Developed and maintained multiple client websites and web applications using JavaScript, React, and PHP</li>
+                                <li>Created RESTful APIs that improved data retrieval speed by 60%</li>
+                                <li>Collaborated with UX/UI designers to implement responsive designs that increased mobile user engagement by 45%</li>
+                                <li>Optimized database queries that reduced page load times by 30%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span>2024</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Front-end Developer</h4>
+                            <h5>Tech Innovators</h5>
+                            <ul>
+                                <li>Built responsive websites for clients across various industries using HTML5, CSS3, and JavaScript</li>
+                                <li>Implemented cross-browser compatible solutions that ensured consistent user experience</li>
+                                <li>Collaborated with back-end developers to integrate front-end components with server-side logic</li>
+                                <li>Developed and maintained the company's internal component library</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="resume-section animate fade-in-up delay-3">
+                <h3 class="section-title">Education</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span>2022-2024</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Professional Diploma in Computer Science</h4>
+                            <h5>Takoradi Technical University, Ghana</h5>
+                            <p>Graduated with honors. Specialized in front end development and solving algorithms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span>2025</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Diploma in software Engineering</h4>
+                            <h5>IPMC, Takoradi </h5>
+                            <p>Professional skill in full stack development.</p>
+                        </div>
+                    </div>
+                    
+                    
+            </section>
+
+            <!-- Skills Section -->
+            <section class="resume-section animate fade-in-up delay-4">
+                <h3 class="section-title">Skills</h3>
+                
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h4>Frameworks & Libraries</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Vue.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Express</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Django</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h4>Tools & Technologies</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">REST API</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Webpack</span>
+                            <span class="skill-tag">Sass</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Jest</span>
+                            <span class="skill-tag">Cypress</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="resume-section animate fade-in-up delay-5">
+                <h3 class="section-title">Notable Projects</h3>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4>E-commerce Platform</h4>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>A full-featured e-commerce platform built with React, Node.js, and MongoDB. Includes user authentication, product management, shopping cart, and payment processing.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Stripe</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4>Task Management App</h4>
+                            <div class="project-links">
+                                <a href="work.html" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="work.html" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>A collaborative task management application with real-time updates, team workspaces, and progress tracking. Built with Vue.js, Firebase, and Tailwind CSS.</p>
+                        <div class="project-tags">
+                           <a href="work.html"><span class="project-tag">Vue.js</span></a> 
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Tailwind</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4>Health & Fitness Tracker</h4>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>A mobile application for tracking workouts, nutrition, and health metrics. Features include custom workout plans, meal tracking, and progress visualization.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">GraphQL</span>
+                            <span class="project-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Languages Section -->
+            <section class="resume-section animate fade-in-up delay-6">
+                <h3 class="section-title">Languages</h3>
+                
+                <div class="languages-container">
+                    <div class="language-item">
+                        <span class="language-name">English</span>
+                        <div class="language-level">
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-dot active"></span>
+                            <span class="level-label">Native</span>
+                        </div>
+                    </div>
+                    
+                    <div class="language-item">
+                        <span class="language-name">Spanish</span>
+                        <div class="language-level">
+                            <span class="level-dot active"></span>
+                            <span class="level-dot "></span>
+                            <span class="level-dot "></span>
+                            <span class="level-dot "></span>
+                            <span class="level-dot"></span>
+                            <span class="level-label">Beginner</span>
+                        </div>
+                    </div>
+                    
+                    <div class="language-item">
+                        <span class="language-name">French</span>
+                        <div class="language-level">
+                            <span class="level-dot active"></span>
+                            <span class="level-dot "></span>
+                            <span class="level-dot "></span>
+                            <span class="level-dot"></span>
+                            <span class="level-dot"></span>
+                            <span class="level-label">Beginner</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interests Section -->
+            <section class="resume-section animate fade-in-up delay-7">
+                <h3 class="section-title">Interests</h3>
+                
+                <div class="interests-container">
+                    <div class="interest-item">
+                        <i class="fas fa-hiking"></i>
+                        <span>Hiking</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-book"></i>
+                        <span>Reading</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-camera"></i>
+                        <span>Photography</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-chess"></i>
+                        <span>Chess</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-plane"></i>
+                        <span>Travel</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-guitar"></i>
+                        <span>Music</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="resume-cta animate fade-in-up">
+            <h2>Interested in working together?</h2>
+            <p>Let's discuss your project and bring your ideas to life.</p>
+            <button class="hire-btn" onclick="window.location.href='hire-me.html'">Hire me</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+    <script src="preloader.js"></script>
+    <script src="download.js"></script>
+    <script src="resume.js"></script>
+</body>
+</html>
+

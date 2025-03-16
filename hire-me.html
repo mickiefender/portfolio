@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me - Michael Coleman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hire-me.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h2>Mickie.</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+                <button class="hire-btn active">Hire me</button>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        <!-- From Uiverse.io by gsperandio --> 
+<div class="loop cubes">
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+    <div class="item cubes"></div>
+</div>
+
+        <!-- Hire Me Hero Section -->
+        <section class="hire-hero">
+            <h1 class="animate fade-in-up">Let's Work <span class="highlight">Together</span></h1>
+            <p class="section-subtitle animate fade-in-up delay-1">
+                Select a service below to get started. I'll help bring your vision to life with professional quality and attention to detail.
+            </p>
+        </section>
+
+        <!-- Services Selection -->
+        <section class="hire-services">
+            <div class="services-grid">
+                <div class="service-card animate scale-in delay-1" data-service="Website Development">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Custom websites built with modern technologies that are responsive, fast, and SEO-friendly.</p>
+                    <button class="service-btn">Select Service</button>
+                </div>
+                
+                <div class="service-card animate scale-in delay-2" data-service="Mobile App Development">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android with intuitive user experiences.</p>
+                    <button class="service-btn">Select Service</button>
+                </div>
+                
+                <div class="service-card animate scale-in delay-3" data-service="UI/UX Design">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design solutions that enhance user experience and create visually appealing interfaces.</p>
+                    <button class="service-btn">Select Service</button>
+                </div>
+                
+                <div class="service-card animate scale-in delay-4" data-service="Front-end Development">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Front-end Development</h3>
+                    <p>Pixel-perfect front-end implementation with modern frameworks like React, Vue, or Angular.</p>
+                    <button class="service-btn">Select Service</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal Form -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Request Service: <span id="selected-service"></span></h2>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="hire-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget" required>
+                            <option value="">Select a budget range</option>
+                            <option value="¢800-¢1000">¢500-¢1000</option>
+                            <option value="¢1000-¢3000">¢1000-¢3000</option>
+                            <option value="¢3000-¢5000">¢3000-¢5000</option>
+                            <option value="¢5000+">¢5000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="timeline">Project Timeline</label>
+                        <select id="timeline" name="timeline" required>
+                            <option value="">Select a timeline</option>
+                            <option value="Less than 1 month">Less than 1 month</option>
+                            <option value="1-2 months">1-2 months</option>
+                            <option value="2-3 months">2-3 months</option>
+                            <option value="3+ months">3+ months</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Submit via WhatsApp</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="hire-me.js"></script>
+    <script src="preloader.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
+
