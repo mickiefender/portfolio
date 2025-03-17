@@ -1,0 +1,78 @@
+/* Additional responsive fixes */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    width: 100%;
+    /* Prevent overscroll bounce */
+    position: fixed;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Fix for contact section on mobile */
+@media (max-width: 768px) {
+  .contact-section-wrapper {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .contact-content {
+    width: 100%;
+  }
+
+  .contact-info,
+  .contact-form-container {
+    width: 100%;
+  }
+
+  /* Fix for social icons wrapping */
+  .contact-social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  /* Fix for form inputs */
+  .input-with-icon {
+    width: 100%;
+  }
+}
+
+/* Fix for very small screens */
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .stat-item h2 {
+    font-size: 36px;
+  }
+}
+
+/* Fix for footer on mobile */
+@media (max-width: 576px) {
+  .footer-content,
+  .footer-links,
+  .footer-links-column {
+    width: 100%;
+  }
+}
+
