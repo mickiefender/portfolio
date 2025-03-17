@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   })
-  
   // Add a function to check for viewport width and adjust elements if needed
 function adjustForMobile() {
   const isMobile = window.innerWidth <= 768
@@ -120,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  // Smooth scrolling for anchor links
+  // Smooth scrolling for anchor links - MODIFIED to ensure it doesn't break normal scrolling
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault()
@@ -130,9 +129,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const targetElement = document.querySelector(targetId)
       if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 100,
+        // Use scrollIntoView instead of scrollTo for better compatibility
+        targetElement.scrollIntoView({
           behavior: "smooth",
+          block: "start",
+          inline: "nearest",
         })
       }
     })
